@@ -1,2 +1,2 @@
-# edwinojeda-portfolio
+# portfolio
 Professional portfolio website
