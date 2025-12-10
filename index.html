@@ -84,6 +84,37 @@
             }
         }
 
+        .profile-photo-container {
+            margin-bottom: 2rem;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-gold);
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
+            transition: all 0.4s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 48px rgba(212, 175, 55, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
         .name {
             font-family: 'Cormorant Garamond', serif;
             font-size: 4.5rem;
@@ -649,6 +680,11 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
             .name {
                 font-size: 3rem;
             }
@@ -697,11 +733,14 @@
     <div class="bg-decoration bg-decoration-2"></div>
 
     <header>
+        <div class="profile-photo-container">
+            <img src="images/edwin-photo.jpg" alt="Edwin Ojeda - Chief Revenue Officer" class="profile-photo">
+        </div>
         <h1 class="name">EDWIN OJEDA</h1>
         <p class="title">Chief Revenue Officer</p>
         <div class="contact-links">
             <a href="tel:936.494.9979" class="contact-link">936.494.9979</a>
-            <a href="mailto:eojeda1122@gmail.com" class="contact-link">eojeda1122@gmail.com</a>
+            <a href="/cdn-cgi/l/email-protection#a5c0cacfc0c1c494949797e5c2c8c4ccc98bc6cac8" class="contact-link"><span class="__cf_email__" data-cfemail="3e5b51545b5a5f0f0f0c0c7e59535f5752105d5153">[email&#160;protected]</span></a>
             <a href="https://linkedin.com/in/edwinojeda" target="_blank" class="contact-link">LinkedIn Profile</a>
             <span class="contact-link">Conroe, Texas</span>
         </div>
@@ -951,11 +990,5 @@
             </p>
             <div class="cta-buttons">
                 <a href="https://linkedin.com/in/edwinojeda" target="_blank" class="btn btn-primary"><span>View LinkedIn Profile</span></a>
-                <a href="mailto:eojeda1122@gmail.com" class="btn btn-secondary">Contact Me</a>
+                <a href="/cdn-cgi/l/email-protection#97f2f8fdf2f3f6a6a6a5a5d7f0faf6fefbb9f4f8fa" class="btn btn-secondary">Contact Me</a>
             </div>
-        </section>
-    </div>
-
-    <footer>
-        <p>Bilingual Executive (English/Spanish) • Available for Board Advisory Roles</p>
-        <p style="margin-top: 1rem; opacity
